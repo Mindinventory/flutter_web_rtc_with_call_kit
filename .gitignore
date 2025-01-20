@@ -135,6 +135,7 @@ app.*.map.json
 
 # Google Services (e.g. APIs or Firebase)
 google-services.json
+GoogleService-Info.plist
 
 # Exceptions to above rules.
 !**/ios/**/default.mode1v3
