@@ -121,8 +121,7 @@ class FCMHelper {
   }
 
   static Future<Map<String, dynamic>> loadFirebaseConfig() async {
-    final String jsonString =
-        await rootBundle.loadString(String.fromEnvironment('FIREBASE_CONFIG'));
+    final String jsonString = await rootBundle.loadString(AppAssets.firebaseConfig);
     return jsonDecode(jsonString) as Map<String, dynamic>;
   }
 }

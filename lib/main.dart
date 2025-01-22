@@ -52,7 +52,10 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       builder: (context, state) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(primarySwatch: AppColors.primarySwatch),
+          theme: ThemeData(
+            primarySwatch: AppColors.primarySwatch,
+            scaffoldBackgroundColor: AppColors.white,
+          ),
           navigatorKey: AppConstants.navigatorKey,
           scaffoldMessengerKey: AppConstants.scaffoldMessengerKey,
           onGenerateRoute: AppNavigator.materialAppRoutes,
@@ -77,7 +80,10 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
               TextButton(
                 onPressed: () {
                   Navigator.pushNamedAndRemoveUntil(
-                      context, AppRoutes.authenticationPage, (route) => false);
+                    context,
+                    AppRoutes.authenticationPage,
+                    (route) => false,
+                  );
                 },
                 child: const Text('Okay'),
               ),

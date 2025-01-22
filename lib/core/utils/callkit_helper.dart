@@ -32,7 +32,6 @@ class CallKitHelper {
         isShowLogo: false,
         ringtonePath: 'system_ringtone_default',
         backgroundColor: '#fa828f',
-        backgroundUrl: payload?.imageUrl ?? 'https://i.pravatar.cc',
         actionColor: '#4CAF50',
         textColor: '#ffffff',
         incomingCallNotificationChannelName: "Incoming Call",

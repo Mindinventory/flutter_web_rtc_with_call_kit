@@ -160,7 +160,10 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 },
               );
             },
-            icon: const Icon(Icons.logout),
+            icon: const Icon(
+              Icons.logout,
+              color: AppColors.white,
+            ),
           ),
         ],
       ),
