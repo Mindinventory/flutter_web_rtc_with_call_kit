@@ -157,3 +157,4 @@ GoogleService-Info.plist
 
 # Environment configuration
 lib/environment/*.env
+lib/environment/*.json
