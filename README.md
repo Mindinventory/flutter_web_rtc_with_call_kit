@@ -2,13 +2,13 @@
 
 Flutter example of webrtc with callkit for Android and iOS.
 
-WebRTC (Web Real-Time Communication) is a powerful framework that allows for peer-to-peer
-communication between web browsers and mobile apps, enabling features like audio and video calling,
-screen sharing, and file transfer.
+* WebRTC (Web Real-Time Communication) is a powerful framework that allows for peer-to-peer
+  communication between web browsers and mobile apps, enabling features like audio and video
+  calling, screen sharing, and file transfer.
 
-CallKit is an Apple framework designed to enable seamless integration of audio and video calling
-services into our apps. It provides a native-like calling interface, improving the user experience
-by mimicking the look and feel of the system's Phone app.
+* CallKit is an Apple framework designed to enable seamless integration of audio and video calling
+  services into our apps. It provides a native-like calling interface, improving the user experience
+  by mimicking the look and feel of the system's Phone app.
 
 Check out our blog to learn how we built this: [Integrating Flutter WebRTC with CallKit for Seamless
 Communication.](https://medium.com/mindful-engineering/Integrating-Flutter-WebRTC-with-CallKit-for-Seamless-Communication)
@@ -31,6 +31,7 @@ Communication.](https://medium.com/mindful-engineering/Integrating-Flutter-WebRT
 </table>
 
 # Usage Instructions
+
 To run this example on your system, follow these steps:
 
 * Clone the Repository
