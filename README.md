@@ -59,7 +59,6 @@ To run this example on your system, follow these steps:
 
 * https://www.youtube.com/watch?v=hAKQzNQmNe0z
 * https://github.com/md-weber/webrtc_tutorial
-* https://github.com/hiennguyen92/flutter_callkit_incoming
 
 # LICENSE!
 
