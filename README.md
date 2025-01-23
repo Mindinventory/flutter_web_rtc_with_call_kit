@@ -13,7 +13,7 @@ Flutter example of webrtc with callkit for Android and iOS.
 Check out our blog to learn how we built this: [Integrating Flutter WebRTC with CallKit for Seamless
 Communication.](https://medium.com/mindful-engineering/Integrating-Flutter-WebRTC-with-CallKit-for-Seamless-Communication)
 
-# Flowchart to get a clear understanding of the entire process
+# Flowchart
 
 <img src="screenshots/WebRTC_with_CallKit.png">
 
