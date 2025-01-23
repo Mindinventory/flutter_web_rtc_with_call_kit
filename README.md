@@ -13,6 +13,22 @@ Flutter example of webrtc with callkit for Android and iOS.
 Check out our blog to learn how we built this: [Integrating Flutter WebRTC with CallKit for Seamless
 Communication.](https://medium.com/mindful-engineering/Integrating-Flutter-WebRTC-with-CallKit-for-Seamless-Communication)
 
+# Flowchart to get a clear understanding of the entire process
+
+<img src="screenshots/WebRTC_with_CallKit.png">
+
+1. Call Initiation: User A starts a video call with User B.
+2. Signaling: A signaling server facilitates the exchange of SDP and ICE candidates between User A
+   and User B to establish a connection.
+3. Connection Setup: Once signaling is complete, WebRTC captures and transmits audio and video data
+   between the devices of User A and User B.
+4. Incoming Call Notification: User B's device receives the incoming call, and CallKit displays a
+   system notification, allowing the user to accept or decline.
+5. Call Handling: If User B accepts, CallKit informs the Flutter app, which then establishes the
+   WebRTC-based audio and video connection between the devices.
+6. In-Call Experience: The video call is displayed in the app's interface, with controls for muting
+   audio or video, or ending the call.
+
 # Preview
 
 <table>
