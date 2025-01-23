@@ -31,9 +31,10 @@ Future<void> _onBackgroundMessage(RemoteMessage message) async {
 class FCMHelper {
   static FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
 
-  static const String sendNotificationURL =
-      'https://fcm.googleapis.com/v1/projects/flutter-web-rtc-with-call-kit/messages:send';
-  static const String verifyFcmTokenURL =
+  static final String projectId = 'flutter-web-rtc-with-call-kit';
+  static final String sendNotificationURL =
+      'https://fcm.googleapis.com/v1/projects/$projectId/messages:send';
+  static final String verifyFcmTokenURL =
       'https://www.googleapis.com/auth/firebase.messaging';
 
   static late String fcmToken;
@@ -121,7 +122,8 @@ class FCMHelper {
   }
 
   static Future<Map<String, dynamic>> loadFirebaseConfig() async {
-    final String jsonString = await rootBundle.loadString(AppAssets.firebaseConfig);
+    final String jsonString =
+        await rootBundle.loadString(AppAssets.firebaseConfig);
     return jsonDecode(jsonString) as Map<String, dynamic>;
   }
 }

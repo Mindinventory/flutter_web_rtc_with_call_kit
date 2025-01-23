@@ -2,6 +2,17 @@
 
 Flutter example of webrtc with callkit for Android and iOS.
 
+WebRTC (Web Real-Time Communication) is a powerful framework that allows for peer-to-peer
+communication between web browsers and mobile apps, enabling features like audio and video calling,
+screen sharing, and file transfer.
+
+CallKit is an Apple framework designed to enable seamless integration of audio and video calling
+services into our apps. It provides a native-like calling interface, improving the user experience
+by mimicking the look and feel of the system's Phone app.
+
+Check out our blog to learn how we built this: [Integrating Flutter WebRTC with CallKit for Seamless
+Communication.](https://medium.com/mindful-engineering/Integrating-Flutter-WebRTC-with-CallKit-for-Seamless-Communication)
+
 # Preview
 
 <table>
@@ -19,7 +30,36 @@ Flutter example of webrtc with callkit for Android and iOS.
   </tr>
  </table>
 
-## Let us know!
+# Usage Instructions
+To run this example on your system, follow these steps:
+
+* Clone the Repository
+* Set Up Firebase
+    * Create a Firebase project and configure it for Android and iOS.
+* Replace Firebase Config Files
+    * Dart: Replace `firebase_options.dart`, `firebase.json`
+    * Android: Replace `google-services.json`
+    * iOS: Replace `GoogleService-Info.plist`
+* Add Service Account JSON
+    * Add your Firebase service account JSON to the assets folder.
+    * Replace the firebaseConfig with your JSON file in the `app_assets.dart`
+* Update FCM Helper
+    * Replace the projectId in the `fcm_helper.dart` with your Firebase project ID.
+
+# Dependencies
+
+* [flutter_webrtc](https://pub.dev/packages/flutter_webrtc)
+* [flutter_callkit_incoming](https://pub.dev/packages/flutter_callkit_incoming)
+* [firebase_core](https://pub.dev/packages/firebase_core)
+* [cloud_firestore](https://pub.dev/packages/cloud_firestore)
+* [firebase_messaging](https://pub.dev/packages/firebase_messaging)
+
+# LICENSE!
+
+**flutter_web_rtc_with_call_kit**
+is [MIT-licensed.](https://github.com/Mindinventory/flutter_web_rtc_with_call_kit/blob/main/LICENSE)
+
+# Let us know!
 
 We’d be really happy if you send us links to your projects where you use our open-source libraries.
 Just send an email to [sales@mindinventory.com](mailto:sales@mindinventory.com) And do let us know
