@@ -28,7 +28,7 @@ Communication.](https://medium.com/mindful-engineering/Integrating-Flutter-WebRT
     <td><img src="screenshots/audio_call.png" width=200 height=360></td>
     <td><img src="screenshots/video_call.png" width=200 height=360></td>
   </tr>
- </table>
+</table>
 
 # Usage Instructions
 To run this example on your system, follow these steps:
