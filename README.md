@@ -54,6 +54,12 @@ To run this example on your system, follow these steps:
 * [cloud_firestore](https://pub.dev/packages/cloud_firestore)
 * [firebase_messaging](https://pub.dev/packages/firebase_messaging)
 
+# References
+
+* https://www.youtube.com/watch?v=hAKQzNQmNe0z
+* https://github.com/md-weber/webrtc_tutorial
+* https://github.com/hiennguyen92/flutter_callkit_incoming
+
 # LICENSE!
 
 **flutter_web_rtc_with_call_kit**
