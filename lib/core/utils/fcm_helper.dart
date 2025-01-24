@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/services.dart';
@@ -44,7 +45,7 @@ class FCMHelper {
     FirebaseMessaging.onBackgroundMessage(_onBackgroundMessage);
     firebaseMessaging.getInitialMessage().then(_onInitialMessage);
     FirebaseMessaging.onMessage.listen(_onMessage);
-    fcmToken = await firebaseMessaging.getToken() ?? '';
+    fcmToken = await _getFirebaseToken();
   }
 
   static _onInitialMessage(RemoteMessage? message) {
@@ -75,6 +76,25 @@ class FCMHelper {
         CallKitHelper.endAllCalls();
       }
     }
+  }
+
+  static Future<String> _getFirebaseToken() async {
+    String? fcmToken;
+    if (Platform.isIOS) {
+      String? apnsToken = await FirebaseMessaging.instance.getAPNSToken();
+      if (apnsToken != null) {
+        fcmToken = await FirebaseMessaging.instance.getToken();
+      } else {
+        await Future.delayed(Duration(seconds: 3));
+        apnsToken = await FirebaseMessaging.instance.getAPNSToken();
+        if (apnsToken != null) {
+          fcmToken = await FirebaseMessaging.instance.getToken();
+        }
+      }
+    } else {
+      fcmToken = await FirebaseMessaging.instance.getToken();
+    }
+    return fcmToken ?? '';
   }
 
   static Future<http.Response?> sendNotification({
