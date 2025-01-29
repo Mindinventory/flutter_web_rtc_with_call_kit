@@ -10,9 +10,6 @@ Flutter example of webrtc with callkit for Android and iOS.
   services into our apps. It provides a native-like calling interface, improving the user experience
   by mimicking the look and feel of the system's Phone app.
 
-Check out our blog to learn how we built this: [Integrating Flutter WebRTC with CallKit for Seamless
-Communication.](https://medium.com/mindful-engineering/integrating-flutter-webrtc-with-callkit-for-seamless-communication)
-
 # Flowchart
 
 <img src="screenshots/WebRTC_with_CallKit.png">
